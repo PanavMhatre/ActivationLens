@@ -1,0 +1,28 @@
+# Python interpreter caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Databricks / Spark local artifacts
+.ipynb_checkpoints/
+metastore_db/
+spark-warehouse/
+*.parquet
+*.snappy
+*.delta
+*.db
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+
+# Outputs not required for deterministic regeneration
+data/
+outputs/
